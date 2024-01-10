@@ -1,0 +1,47 @@
+.sider {
+  background-color: var(--bgColor);
+  .siderImg {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: auto;
+  }
+  .img {
+   // margin: 3px 0;
+   padding: 3px 3px;
+    height: 70px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.header {
+  box-shadow: 0px 4px 40px 0px rgba(39, 32, 120, 0.1);
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  .menu {
+    display: flex;
+    margin-right: 5vh;
+    .iconInforWrap {
+      cursor: pointer;
+      .iconInfor {
+        font-size: 16px;
+      }
+    }
+    .information {
+      display: flex;
+    }
+    .imgWrap {
+      display: flex;
+      position: relative;
+      align-items: center;
+    }
+    .avatar {
+      margin: 0 0 0 7px;
+      height: 47px;
+    }
+    .userName {
+      margin: 0 0 0 0px;
+    }
+  }
+}

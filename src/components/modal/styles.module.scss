@@ -1,0 +1,16 @@
+.title{
+    margin-top: 3vh;
+}
+.form{
+    // display: flex;
+    .input{
+     //   width: 70%;
+     margin-right: 2vh;
+    }
+    .barcode{
+        cursor: pointer;
+        border-radius: 4px;
+        border: 1px solid var(--line);
+        padding: 0.7vh 1vh 0.2vh 1vh;
+    }
+}

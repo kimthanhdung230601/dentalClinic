@@ -1,0 +1,170 @@
+.content {
+  margin: 0 17px 10px 0;
+  padding: 14px;
+  min-height: 280px;
+  background: var(--bgColor);
+  border-radius: 8px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.select {
+  min-height: 30px;
+}
+.btnFilter {
+  border-radius: 16px;
+}
+.row {
+  display: flex;
+  //align-items: center;
+  position: relative;
+  width: fit-content;
+  &:first-child {
+    border-top: 1px solid var(--line);
+  }
+  &:nth-child(2) {
+    border-top: 0;
+  }
+  &.rowSticky {
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: var(--bgColor);
+    z-index: 11;
+    .blank,
+    .item {
+      border-bottom: 1px solid var(--line);
+    }
+  }
+  &:last-child {
+    .item {
+      border-bottom: 1px solid var(--subLine);
+    }
+  }
+}
+.time {
+  width: 100px;
+  //  padding: 3vh 10px;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--line);
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: var(--bgColor);
+  &:first-child {
+    border-left: 1px solid var(--subLine);
+    border-top: 1px solid var(--subLine);
+  }
+  &.blank {
+    // border-left: 0;
+    // border-right: 0;
+    // width: 98px;
+    min-height: 92px !important;
+  }
+}
+
+.row1 {
+  margin: 0 10px 10px 0px;
+}
+.col {
+  margin: 0 10px 10px 0;
+}
+.calendar {
+  // display: flex;
+  width: 100%;
+  // height: 70%;
+  overflow: scroll;
+}
+.boder {
+  border: 1px solid #ccc;
+}
+.roomList {
+  // display: flex;
+  width: 72vh;
+  // --ant-display: block !important; 
+  //   display: block !important;
+  //   display: var(--ant-display) !important;
+  //   flex: 0 0 100% !important;
+  //   max-width: 100% !important;
+}
+.day {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+.date {
+  margin: 0;
+  padding: 2vh 0;
+  border-right: 1px solid var(--line);
+  //  width: 300px;
+}
+.blank {
+  // height: ;
+  // width: 70px;
+}
+.title {
+  padding: 7px 7px;
+}
+.btnChoosen {
+  cursor: pointer;
+  margin: 0 7px 10px 0px;
+  border: 1px solid var(--subPrimary);
+  background-color: var(--subPrimary);
+  color: #fff;
+}
+.btnChoosen:hover {
+  opacity: 0.8;
+  border: 1px solid var(--subPrimary) !important;
+  background-color: var(--subPrimary) !important;
+  color: #fff !important;
+}
+.btnUsually {
+  margin: 0 7px 10px 0px;
+
+  border: 1px solid var(--subPrimary) !important;
+  color: var(--subPrimary) !important;
+}
+.btn {
+  // position: absolute;
+  // display: flex;
+  //float: right;
+  margin: 10px 0 0 77%;
+  // padding: 0 3vh;
+}
+.select {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 3vh 0;
+  .selectItem {
+    display: flex;
+    //  width: 100%;
+  }
+  label {
+    padding: 6px 2px 0 0;
+  }
+}
+.roomName {
+  // border: 1px solid var(--line);
+}
+.room {
+  border: 1px solid var(--line);
+  border-left: none;
+  width: 120px;
+  // width: 25%; /* Đặt kích thước cố định cho cột */
+  // flex: 0 0 25%; /* Không cho phép linh hoạt theo nội dung */
+  // max-width: 25%; /* Đặt kích thước tối đa */
+}
+.record {
+  // border: 0.5px solid #ccc;
+  cursor: pointer;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--subLine);
+  height: 120px;
+  padding-top: 3vh;
+  width: 120px;}
+
+.leave {
+  background-color: grey;
+}
