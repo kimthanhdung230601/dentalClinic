@@ -7,14 +7,16 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ConfigProvider } from "antd";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { store } from "./store";
+import { store,persistor} from "./store";
+import { PersistGate } from "redux-persist/integration/react";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 const queryClient = new QueryClient();
 root.render(
   <Provider store={store}>
-    <React.StrictMode>
+     <PersistGate  persistor={persistor}>
+       <React.StrictMode>
       <QueryClientProvider client={queryClient}>
         <ConfigProvider>
           <BrowserRouter>
@@ -23,6 +25,8 @@ root.render(
         </ConfigProvider>
       </QueryClientProvider>
     </React.StrictMode>
+     </PersistGate>
+   
   </Provider>
 );
 

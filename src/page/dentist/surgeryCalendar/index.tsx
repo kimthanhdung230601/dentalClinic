@@ -22,6 +22,8 @@ const SurgeryCalendar = () => {
   const dispatch = useDispatch();
 
   const dentist = useSelector((state: any) => state.dentist);
+  // console.log("dentist",den);
+  
   const [filter, setFilter] = useState({
     status_display: "many",
     start: dentist.startDate || moment(),
